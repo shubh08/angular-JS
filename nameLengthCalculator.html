@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="app2.js"></script>
+
+    </script>
+    <meta charset="utf-8">
+    <title>NameLengthCalculator</title>
+  </head>
+  <body ng-app="nameCalculator">
+
+    <div ng-controller="nameController">
+      Input Name:<input type="text" ng-model="name"
+      ng-keyup="nameLengthCalculator();"
+      >{{name}}
+      <br>
+      Your name length is : {{nameLength}}
+
+    </div>
+  </body>
+</html>
